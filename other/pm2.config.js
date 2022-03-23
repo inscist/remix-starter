@@ -30,12 +30,5 @@ module.exports = {
       ignore_watch: ["."],
       env,
     },
-    {
-      name: "Tailwind",
-      script: "npm run generate:css -- --watch",
-      autorestart: false,
-      ignore_watch: ["."],
-      env,
-    },
   ],
 };
