@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "uber.baseweb",
+    "prisma.prisma",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "blanu.vscode-styled-jsx",
+    "divlo.vscode-styled-jsx-languageserver",
+    "meganrogge.template-string-converter",
+    "shardulm94.trailing-spaces",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "guilhermetheodoro.typescript-indexing",
+    "matiasg.import-doc-link",
+    "mike-co.import-sorter",
+    "chakrounanas.turbo-console-log",
+    "dannyconnell.split-html-attributes",
+    "eg2.vscode-npm-script",
+    "eamodio.gitlens",
+    "mhutchie.git-graph"
+  ]
+}
