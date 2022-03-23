@@ -1,9 +1,11 @@
 node_modules
 
-/build
-/public/build
+build
+dist
+public/build
 .env
 
-/cypress/screenshots
-/cypress/videos
-/postgres-data
+cypress/screenshots
+cypress/videos
+coverage
+postgres-data

@@ -27,12 +27,6 @@
   "prisma": {
     "seed": "node --require esbuild-register prisma/seed.ts"
   },
-  "prettier": {},
-  "eslintIgnore": [
-    "/node_modules",
-    "/build",
-    "/public/build"
-  ],
   "engines": {
     "node": ">=14"
   },
