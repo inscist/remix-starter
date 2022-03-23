@@ -1,11 +1,11 @@
-# Remix Blues Stack
+# INSCIST Remix Starter
 
-![The Remix Blues Stack](https://repository-images.githubusercontent.com/461012689/37d5bd8b-fa9c-4ab0-893c-f0a199d5012d)
+A highly-opinionated [Remix Stack](https://remix.run/stacks) made just for our projects.
 
-Learn more about [Remix Stacks](https://remix.run/stacks).
+Deployed to the edge (distributed) with a long-running Node.js server and PostgreSQL database. Intended for large and fast production-grade applications serving millions of users.
 
 ```
-npx create-remix --template remix-run/blues-stack
+npx create-remix --template inscist/remix-starter
 ```
 
 ## What's in the stack
@@ -21,8 +21,9 @@ npx create-remix --template remix-run/blues-stack
 - Local third party request mocking with [MSW](https://mswjs.io)
 - Unit testing with [Vitest](https://vitest.dev) and [Testing Library](https://testing-library.com)
 - Code formatting with [Prettier](https://prettier.io)
-- Linting with [ESLint](https://eslint.org)
+- Linting with [ESLint](https://eslint.org) with extensive configuration
 - Static Types with [TypeScript](https://typescriptlang.org)
+- Set of recommended extensions for [VS Code](https://code.visualstudio.com)
 
 Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --template your/repo`! Make it your own.
 
@@ -151,7 +152,9 @@ You can check the `x-fly-region` header on the response to know which region you
 
 ## GitHub Actions
 
-We use GitHub Actions for continuous integration and deployment. Anything that gets into the `main` branch will be deployed to production after running tests/build/etc. Anything in the `dev` branch will be deployed to staging.
+We use GitHub Actions for continuous integration and deployment.
+* Anything that gets into the `main` branch will be deployed to production after running tests/build/etc.
+* Anything in the `dev` branch will be deployed to staging.
 
 ## Testing
 
@@ -182,11 +185,15 @@ That way, we can keep your local db clean and keep your tests isolated from one 
 
 ### Vitest
 
-For lower level tests of utilities and individual components, we use `vitest`. We have DOM-specific assertion helpers via [`@testing-library/jest-dom`](https://testing-library.com/jest-dom).
+For lower level tests of utilities and individual components, we use `vitest`.
+
+We have DOM-specific assertion helpers via [`@testing-library/jest-dom`](https://testing-library.com/jest-dom).
 
 ### Type Checking
 
-This project uses TypeScript. It's recommended to get TypeScript set up for your editor to get a really great in-editor experience with type checking and auto-complete. To run type checking across the whole project, run `npm run typecheck`.
+This project uses TypeScript. It's recommended to get TypeScript set up for your editor to get a really great in-editor experience with type checking and auto-complete.
+
+To run type checking across the whole project, run `npm run typecheck`.
 
 ### Linting
 
@@ -194,4 +201,6 @@ This project uses ESLint for linting. That is configured in `.eslintrc.js`.
 
 ### Formatting
 
-We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `npm run format` script you can run to format all files in the project.
+We use [Prettier](https://prettier.io/) for auto-formatting in this project.
+
+There's also a `npm run format` script you can run to format all files in the project.
