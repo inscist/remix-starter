@@ -1,9 +1,73 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+# Security
+*.env*.local
+*service-account*.json
+*.pem
+*.faunarc
+
+# Compiled Output
+build
+dist
+www
+output
+out
+out-tsc
+tmp
+tsconfig.generated.json
+hosting.**
+generated/bundle/
+generated/prisma/
+.next/
+
+# Dependencies
 node_modules
+.pnp
+.pnp.js
 
-/build
-/public/build
-.env
+# Testing
+coverage
+cypress/screenshots
+cypress/videos
 
-/cypress/screenshots
-/cypress/videos
-/postgres-data
+# Database
+postgres-data
+
+# Ionic
+.ionic
+platforms
+plugins
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+.angular
+.vercel
+connect.lock
+.sass-cache
+.sourcemaps
+.versions
+typings
+*.log
+log.txt
+
+# System Files
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
